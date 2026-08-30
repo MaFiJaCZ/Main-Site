@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head><title>TheResourceHarvester-Index</title>
+<head>
+  <title>TheResourceHarvester-Index</title>
   <style>
     /* 1. This registers the file and assigns it a nickname */
     @font-face {
       font-family: VCR_OSD_MONO;
       src: url("VCR_OSD_MONO_1.001.ttf");
     }
-       /* 2. This applies the registered font specifically to ALL h1 tags */
+    
+    /* 2. This applies the registered font specifically to ALL h1 tags */
     h1 {
       font-family: VCR_OSD_MONO, monospace;
+      color: white; /* Added this so your text is white against the black background! */
     }
+  </style> <!-- FIX 1: Properly closed the style block -->
 </head>
-  <body bgrcolor:black>
+<body style="background-color: black;"> <!-- FIX 2: Corrected inline CSS background style -->
   <h1>TheResourceHarvester</h1>
-  </body>
+</body>
 </html>
