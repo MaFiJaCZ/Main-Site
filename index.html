@@ -33,7 +33,10 @@
   color: #bf55ec; /* Changes to neon purple on hover! */
   text-decoration: underline; /* Adds an accent underline */
 }
-
+  button {
+    font-family:VCR_OSD_MONO;
+    color: white;
+  }
   </style> <!-- FIX 1: Properly closed the style block -->
 </head>
 <body style="background-color: black;"> <!-- FIX 2: Corrected inline CSS background style -->
@@ -56,6 +59,9 @@
   <center>
      <a href="https://community.lambdageneration.com/user/the-resource-harvester">My LAMBDA GENERATION</a>
     <p>With that said, there's basically nothing more to share, most of the music i actually like is on my NG.</p>
+    <!-- Teleportuje uživatele přímo k sekci s ID 'devlog' -->
+<button onclick="document.getElementById('devlog').scrollIntoView({behavior: 'smooth'})">Go to devlog</button>
+
     <p>One more thing to add is, i'll probably have a game on here sometime, i've made a... "Studio" with my 2 friends.</p>
   </center>
   </div>
@@ -64,7 +70,7 @@
     <h2>I have no game to show yet :(</h2>
     </center>
   </div>
-  <div>
+  <div id="DEVLOG">
     <center>
       <h1>DEVLOG</h1>
     </center>
